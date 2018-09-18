@@ -54,3 +54,5 @@ $(window).bind('scroll', function () {
 $('.btn-color').click(function() {
   $(this).toggleClass('border-color')
 });
+
+$('.dropdown-toggle').dropdown();

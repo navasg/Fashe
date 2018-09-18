@@ -189,7 +189,7 @@
   color: #000;
   content: " ";
 }
-.product img {
+.product img, .our-products img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -203,7 +203,7 @@
   font-weight: 900;
 }
 
-.product p {
+.product p, .our-products p {
   margin: 0;
 }
 
@@ -219,7 +219,7 @@
   transition: .5s;
 }
 
-.product h4{
+.product h4, .our-products h4{
   font-size: 16px;
   color: #555555;
 }
@@ -318,7 +318,7 @@
   opacity: 1;
 }
 
-.product .btn-principal {
+.product .btn-principal, .our-products .btn-principal {
   bottom: -47px;
   position: absolute;
 }
