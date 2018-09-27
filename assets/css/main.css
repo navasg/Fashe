@@ -137,11 +137,17 @@
 
 .slick-prev-arrow {
   left: 25px;
+  opacity: 0;
 }
 
 .slick-next-arrow {
   right: 25px;
+  opacity: 0;
 
+}
+
+.banner:hover .slick-next-arrow, .banner:hover .slick-prev-arrow {
+  opacity: 1;
 }
 
 .slick-slider {
@@ -286,6 +292,7 @@
   overflow: hidden;
   position: relative;
   margin: 30px 0;
+  width: 256px;
   height: 350px;
 }
 
@@ -314,6 +321,11 @@
   opacity: 0;
 }
 
+.product-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .heart-white:hover {
   opacity: 1;
 }
@@ -517,7 +529,6 @@
   color: #555555;
   display: flex;
   flex-direction: column;
-  height: 300px;
   justify-content: center;
 }
 
@@ -627,3 +638,56 @@
   background-color: #e65540;
   transition: .5s;
 }
+
+@media screen and (max-width: 767px) and (min-width: 0px){
+  .box-right-social, .box-left-social {
+    display: none;
+  }
+  /*HEADER*/ 
+  header {
+    display: flex;
+  }
+  /*NAVBAR*/
+  .nav-link {
+    padding: 0;
+  }
+  /*BANNER*/
+  .text-banner h1 {
+    font-size: 44px;
+  }
+
+  .text-banner h1::before {
+    width: 60% !important;
+  }
+
+  .banner-item {
+    margin-bottom: 44px;
+  }
+
+  .btn-banner {
+    bottom: 60px;
+  }
+
+
+  .single-item {
+    margin-bottom: 40px;
+  }
+  /*WIDGETS DE INSTAGRAM*/
+  .gallery-instagram {
+    width: 100%;
+  }
+  /*SHIPPING*/
+  .box-shipping  {
+    border-right: transparent !important;
+    border-left: transparent !important;
+  }
+  /*FOOTER*/
+  .contact-items {
+    margin: 40px 0;
+  }
+
+  .payment p {
+    text-align: center;
+  }
+} 
+
