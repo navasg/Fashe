@@ -1,25 +1,25 @@
 $('.single-item').slick({
-   // arrows: false,
-   infinite: false,
-   prevArrow: '<div class="slick-prev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>',//$('.slick-prev-arrow'),
-   nextArrow: '<div class="slick-next-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>',//$('.slick-next-arrow'),
- });
+  // arrows: false,
+  infinite: false,
+  prevArrow: '<div class="slick-prev-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>',//$('.slick-prev-arrow'),
+  nextArrow: '<div class="slick-next-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>',//$('.slick-next-arrow'),
+});
 // ANIMATE
 wow = new WOW(
-{
-  animateClass: 'animated',
-  offset:       100,
-  callback:     function(box) {
-    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+  {
+    animateClass: 'animated',
+    offset: 100,
+    callback: function (box) {
+      console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+    }
   }
-}
 );
 wow.init();
 
 // slideshow
 
-$(document).ready(function(){
-  $('.slideshow').click(function(){
+$(document).ready(function () {
+  $('.slideshow').click(function () {
     $('body, html').animate({
       scrollTop: '0px'
     }, 500);
@@ -37,7 +37,7 @@ $(document).ready(function(){
 $(window).bind('scroll', function () {
   if ($(window).scrollTop() > 100) {
     $('.slideshow').addClass('slideshow-visible');
-  } else{
+  } else {
     $('.slideshow').removeClass('slideshow-visible');
   }
 });
@@ -51,7 +51,7 @@ $(window).bind('scroll', function () {
 //   }
 // });
 
-$('.btn-color').click(function() {
+$('.btn-color').click(function () {
   $(this).toggleClass('border-color')
 });
 
