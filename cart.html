@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cart</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/product.css">
+</head>
+
+<body>
+  <header>
+    <div class="container flex-container">
+      <div class="box-left-social">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+        <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </div>
+      <div class="box-logo">
+        <img src="assets/img/logo.png" alt="">
+      </div>
+      <div class="box-right-social">
+        <a href="#">fashe@example.com</a>
+        <span>USD</span>
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+      </div>
+    </div>
+    <nav class="pl-0 pr-0 navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sale">Sale</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section class="banner-cart padding-top-bottom">
+    <div class="text-banner">
+      <h1>Cart</h1>
+    </div>
+  </section>
+  <section class="content-card padding-top-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 ">
+          <h3>Product</h3>
+        </div>
+        <div class="col-lg-2 ">
+          <h3>Price</h3>
+        </div>
+        <div class="col-lg-2 ">
+          <h3>Quantity</h3>
+
+        </div>
+        <div class="col-lg-2">
+          <h3>Total</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row details-cart padding-top-bottom">
+        <div class="col-lg-6 ">
+          <div class="cart-product">
+            <div class="img-cart">
+              <div class="mask-cart">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <p class="title-product">Herschel Supply co 25l</p>
+          </div>
+        </div>
+        <div class="col-lg-2 ">
+          <div class="cart-price">
+            <h4 class="price-product">$75</h4>
+          </div>
+        </div>
+        <div class="col-lg-2 ">
+          <div class="product-cant cart-quantity">
+            <div class="number-input">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+              <input class="quantity" min="0" name="quantity" value="1" type="number">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="cart-total">
+            <h4 class="price-product">$75</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row details-cart padding-top-bottom">
+        <div class="col-lg-6 ">
+          <div class="cart-product">
+            <div class="img-cart">
+              <div class="mask-cart">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <p class="title-product">Herschel Supply co 25l</p>
+          </div>
+        </div>
+        <div class="col-lg-2 ">
+          <div class="cart-price">
+            <h4 class="price-product">$75</h4>
+          </div>
+        </div>
+        <div class="col-lg-2 ">
+          <div class="product-cant cart-quantity">
+            <div class="number-input">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+              <input class="quantity" min="0" name="quantity" value="1" type="number">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="cart-total">
+            <h4 class="price-product">$75</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row details-cart padding-top-bottom">
+        <div class="col-lg-6 ">
+          <div class="cart-product">
+            <div class="img-cart">
+              <div class="mask-cart">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <p class="title-product">Herschel Supply co 25l</p>
+          </div>
+        </div>
+        <div class="col-lg-2 ">
+          <div class="cart-price">
+            <h4 class="price-product">$75</h4>
+          </div>
+        </div>
+        <div class="col-lg-2 ">
+          <div class="product-cant cart-quantity">
+            <div class="number-input">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+              <input class="quantity" min="0" name="quantity" value="1" type="number">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="cart-total">
+            <h4 class="price-product">$75</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container cupon-cart details-cart ">
+      <div class="padding-top-bottom">
+        <input type="text" placeholder="Coupon Code">
+        <button class="btn-principal">apply coupon</button>
+      </div>
+      <div>
+        <button class="btn-principal">Update cart</button>
+      </div>
+    </div>
+  </section>
+  <section class="cart-totals padding-top-bottom container">
+    <div class="content-cart">
+      <div class="header-cart">
+        <h3>Cart Totals</h3>
+      </div>
+      <h4>Subtotal:</h4>
+      <hr>
+      <div class="body-cart">
+        <h4>Shipping:</h4>
+        <div class="body-right">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat accusantium assumenda vero sunt. Quia
+            earum
+            animi ipsum tempore voluptatem neque nobis provident necessitatibus harum itaque fuga dolore, saepe
+            similique
+            quis.
+          </p>
+          <h4>CALCULE SHIPPING</h4>
+          <div class="box-dropdown">
+            <div class="dropdown drop-sort">
+              <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Select a country
+              </a>
+              <div class="dropdown-menu menu-drop active" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item drop-item" href="#">Popullarity</a>
+                <a class="dropdown-item drop-item" href="#">Price: low to hight</a>
+                <a class="dropdown-item drop-item" href="#">Price: hight to low</a>
+              </div>
+            </div>
+          </div>
+          <input type="text" placeholder="State / country">
+          <input type="text" placeholder="State / country">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="contact padding-top-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h3>get in touch</h3>
+          <p>
+            Any questions? Let us know in store at 8th floor, 379
+          </p>
+          <p>
+            Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+          </p>
+          <div class="box-left-social">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+            <i class="fa fa-snapchat-ghost" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+          </div>
+        </div>
+        <div class="col-lg-4 contact-items">
+          <div>
+            <h3>Categories</h3>
+            <ul>
+              <li>Men</li>
+              <li>Woman</li>
+              <li>Dresses</li>
+              <li>Sunglasses</li>
+            </ul>
+          </div>
+          <div>
+            <h3>links</h3>
+            <ul>
+              <li>Search</li>
+              <li>About Us</li>
+              <li>Contact Us</li>
+              <li>Returns</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li>Tack Order</li>
+              <li>Returns</li>
+              <li>Shipping</li>
+              <li>FAQs</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box-letters">
+            <h3>Newsletters</h3>
+            <input type="email" placeholder="email@example.com">
+            <button class="btn-principal">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="payment">
+      <span>
+        <img src="assets/img/icons/paypal.png">
+        <img src="assets/img/icons/visa.png">
+        <img src="assets/img/icons/mastercard.png">
+        <img src="assets/img/icons/express.png">
+        <img src="assets/img/icons/discover.png">
+      </span>
+      <p>Copyright © 2018 All rights reserved. | This template is made with by Colorlib</p>
+    </div>
+  </footer>
+
+  <div class="slideshow">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+  </div>
+
+  <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="assets/js/wow.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
